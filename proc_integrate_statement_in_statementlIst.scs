@@ -1,0 +1,282 @@
+scp_program -> proc_integrate_statement_in_statementlist(*
+	
+	-> rrel_params: ...(*
+		-> rrel_1: rrel_in: _task;;
+		-> rrel_2: rrel_in: _statement;;
+	*);;
+	
+		
+	-> rrel_operators: ... (*
+
+	-> rrel_init: ..proc_integrate_statement_in_statementlist_operator0
+		(*
+			<- printNl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: [111111rree1111];;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator1;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator1
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _task;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _contur;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_list_of_answer;;
+
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator9_0;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator2;;
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator2
+		(*
+			<- printNl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: [devstvinii task!!!!!!!!!!!!!!!!!!!!];;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator3_0;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator3_0
+		(*
+			<- genEl;;
+			
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: contur;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator3;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator3
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed:  rrel_scp_var: _task;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const:rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_const: rrel_node: rrel_scp_var: contur;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_list_of_answer;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator4;;
+
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator4
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator5;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator5
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: first_statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator6;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator6
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: first_statement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator7;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator7
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: last_statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator8;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator8
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc6;;
+			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_return;;
+		*);;
+		
+		//проверка присутствия утв или процедуры в листе 
+		
+		->..proc_integrate_statement_in_statementlist_operator9_0
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc7;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _all_state;;
+
+			->rrel_set_3: rrel_assign: rrel_scp_var: _all;;
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator9_1;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_return;;
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator9_1
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _all;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc8;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _state;;
+
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator9_2;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator9;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator9_2
+		(*
+			<- eraseEl;;
+			
+            -> rrel_1:rrel_fixed:rrel_pos_const_perm:rrel_scp_var:rrel_erase: _arc8;;
+
+            => nrel_goto: ..proc_integrate_statement_in_statementlist_operator9_3;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator9_3
+		(*
+			<- ifCoin;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _statement;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _state;;
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator9_error;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator9_1;;
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator9_error
+		(*
+			
+			<- printNl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: [ERROR: statement is listed];;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_return;;
+		
+		*);;
+		
+		
+		
+		
+
+		
+		->..proc_integrate_statement_in_statementlist_operator9
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _arc7;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _all_state;;
+
+			->rrel_set_3: rrel_assign: rrel_scp_var: _all;;
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator10;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_return;;
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator10
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _all;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc8;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _state;;
+
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator11;;
+			=> nrel_else: ..proc_run_testcase_operator_return;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator11
+		(*
+			<- eraseEl;;
+			
+            -> rrel_1:rrel_fixed:rrel_pos_const_perm:rrel_scp_var:rrel_erase: _arc8;;
+
+            => nrel_goto: ..proc_integrate_statement_in_statementlist_operator12;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator12
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc9;;
+			-> rrel_3: rrel_fixed:: rrel_scp_var: _state;;
+			
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator13;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator10;;
+		
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator13
+		(*
+			<- eraseEl;;
+			
+            -> rrel_1:rrel_fixed:rrel_pos_const_perm:rrel_scp_var:rrel_erase: _arc9;;
+
+            => nrel_goto: ..proc_integrate_statement_in_statementlist_operator14;;
+		*);;
+		
+		->..proc_integrate_statement_in_statementlist_operator14
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10;;
+			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator15;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator15
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc11;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _statement;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator16;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator16
+		(*
+			<- genElStr5;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _state;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const:rrel_scp_var: _arc12;;
+			-> rrel_3: rrel_fixed: rrel_const: rrel_node: rrel_scp_var: _statement;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc13;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_next;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator17;;
+		*);;
+		->..proc_integrate_statement_in_statementlist_operator17
+		(*
+			<- genElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _contur;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc14;;
+			-> rrel_3: rrel_fixed: rrel_common: rrel_const:rrel_scp_var: _arc12;;
+
+			=> nrel_goto: ..proc_integrate_statement_in_statementlist_return;;
+		*);;
+		
+		-> ..proc_integrate_statement_in_statementlist_return (* <- return;;	*);;
+	*);;
+*);;
