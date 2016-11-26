@@ -19,17 +19,10 @@ scp_program -> proc_integrate_statement_in_statementlist(*
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_list_of_answer;;
 
 			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator9_0;;
-			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator2;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator3_0;;
 		
 		*);;
-		->..proc_integrate_statement_in_statementlist_operator2
-		(*
-			<- printNl;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: [devstvinii task!!!!!!!!!!!!!!!!!!!!];;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator3_0;;
-		*);;
+		
 		->..proc_integrate_statement_in_statementlist_operator3_0
 		(*
 			<- genEl;;
@@ -59,50 +52,13 @@ scp_program -> proc_integrate_statement_in_statementlist(*
 			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
 			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator5;;
-		*);;
-		
-		->..proc_integrate_statement_in_statementlist_operator5
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: first_statement;;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator6;;
-		*);;
-		->..proc_integrate_statement_in_statementlist_operator6
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: first_statement;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
-			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator7;;
-		*);;
-		->..proc_integrate_statement_in_statementlist_operator7
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed:  rrel_scp_var: contur;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: last_statement;;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator8;;
-		*);;
-		->..proc_integrate_statement_in_statementlist_operator8
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc6;;
-			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
 
 			=> nrel_goto: ..proc_integrate_statement_in_statementlist_return;;
 		*);;
+		
+		
 		
 		//проверка присутствия утв или процедуры в листе 
 		
@@ -204,39 +160,26 @@ scp_program -> proc_integrate_statement_in_statementlist(*
 
 			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator12;;
 		*);;
+			
 		
 		->..proc_integrate_statement_in_statementlist_operator12
 		(*
-			<- searchElStr3;;
+			<- searchElStr5;;
 			
-			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc9;;
-			-> rrel_3: rrel_fixed:: rrel_scp_var: _state;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _state;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const:rrel_scp_var: _arc9;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _next_st;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc13;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_next;;
 			
-			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator13;;
-			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator10;;
+			=> nrel_then: ..proc_integrate_statement_in_statementlist_operator10;;
+			=> nrel_else: ..proc_integrate_statement_in_statementlist_operator13;;
 		
 		*);;
+		
+		
+
 		->..proc_integrate_statement_in_statementlist_operator13
-		(*
-			<- eraseEl;;
-			
-            		-> rrel_1:rrel_fixed:rrel_pos_const_perm:rrel_scp_var:rrel_erase: _arc9;;
-
-            		=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator14;;
-		*);;
-		
-		->..proc_integrate_statement_in_statementlist_operator14
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_const: last_statement;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10;;
-			-> rrel_3: rrel_fixed:: rrel_scp_var: _statement;;
-
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator15;;
-		*);;
-		->..proc_integrate_statement_in_statementlist_operator15
 		(*
 			<- genElStr3;;
 			
@@ -256,18 +199,9 @@ scp_program -> proc_integrate_statement_in_statementlist(*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc13;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_next;;
 
-			=> nrel_goto: ..proc_integrate_statement_in_statementlist_operator17;;
-		*);;
-		->..proc_integrate_statement_in_statementlist_operator17
-		(*
-			<- genElStr3;;
-			
-			-> rrel_1: rrel_fixed: rrel_scp_var: _contur;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc14;;
-			-> rrel_3: rrel_fixed: rrel_common: rrel_const:rrel_scp_var: _arc12;;
-
 			=> nrel_goto: ..proc_integrate_statement_in_statementlist_return;;
 		*);;
+		
 		
 		-> ..proc_integrate_statement_in_statementlist_return (* <- return;;	*);;
 	*);;
